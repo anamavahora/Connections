@@ -1,0 +1,59 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.board button {
+  padding: 15px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.board button.selected {
+  background: #cce5ff;
+  border-color: #007bff;
+}
+
+.board button.found {
+  background: #d4edda;
+  border-color: #28a745;
+  cursor: default;
+}
+
+.controls {
+  margin: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.level-select {
+  margin: 20px 0;
+}
