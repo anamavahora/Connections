@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connections Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Connections</h1>
+
+    <div class="level-select">
+      <label>Select Difficulty:</label>
+      <select id="levelSelect">
+        <option value="easy">Easy 🟢</option>
+        <option value="medium">Medium 🟡</option>
+        <option value="hard">Hard 🔴</option>
+      </select>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="gameBoard" class="board"></div>
+
+    <div class="controls">
+      <button onclick="submitSelection()">Submit</button>
+      <button onclick="clearSelection()">Clear</button>
+    </div>
+
+    <div id="foundGroups"></div>
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
